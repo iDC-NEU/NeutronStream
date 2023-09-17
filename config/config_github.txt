@@ -1,0 +1,15 @@
+epoch:1
+dataset:github
+Hidden_Dim:64
+batch_size:400
+exe_mode:parallel
+omp_thread_count:8
+threadpool_count:4
+device:cpu
+istemporal:false
+slide_mode:slide
+win_size:120
+up:700
+down:500
+stepRate:0.2
+step:20

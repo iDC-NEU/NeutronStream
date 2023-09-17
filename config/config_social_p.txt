@@ -1,0 +1,15 @@
+epoch:1
+dataset:social
+Hidden_Dim:64
+batch_size:200
+exe_mode:parallel
+omp_thread_count:8
+threadpool_count:4
+device:cpu
+istemporal:false
+slide_mode:vary
+win_size:600
+up:300
+down:50
+stepRate:0.2
+step:100

@@ -1,0 +1,37 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+            "name": "(gdb) 启动", //配置名称，显示在配置下拉菜单中
+            "type": "cppdbg", //配置类型
+            "request": "launch", //请求配置类型，可以是启动或者是附加
+            // "program": "${workspaceFolder}/bin/UtilsTests", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/StoreTests", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/DyGNN", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            "program": "${workspaceFolder}/bin/DyRep", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/DBGDYGNN", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/DatasetTests", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            //  "program": "${workspaceFolder}/bin/ProcessTests", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/LogTests", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            // "program": "${workspaceFolder}/bin/TestGrad", //程序可执行文件的完整路径，${workspaceFolder}表示远程连接的初始路径
+            
+            "args": [], //传递给程序的命令行参数
+            "stopAtEntry": false,//可选参数，如果为true,调试程序应该在入口（main）处停止
+            "cwd": "${workspaceFolder}", //目标的工作目录
+            "environment": [], //表示要预设的环境变量
+            "externalConsole": false,//如果为true，则为调试对象启动控制台
+            "MIMode": "gdb",//要连接到的控制台启动程序
+            "setupCommands": [ //为了安装基础调试程序而执行的一个或多个GDB/LLDB命令
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+  ]
+}
