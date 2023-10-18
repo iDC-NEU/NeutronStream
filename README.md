@@ -27,3 +27,16 @@ mkdir build && cd build
 cmake ..
 make 
 ```
+
+### Datasets
+
+All datasets we used:
+
+| Datasets  | Nodes   | Edge.init   | Edge.final   | Event.num |
+| --------- | ------- | ------- | ---- | ---- |
+| Social Evolution  | 84 | 575 | 794 | 54,369 |
+| Github  | 284 | 298 | 4,131 | 20,726 |
+| DNC  | 2,029 | 0  | 5,598 | 39,264 |
+| UCI  | 1,899 | 0  | 20,296 | 59,835 |
+| Reality  | 6,809 | 0  | 9,484 | 52,052 |
+| Slashdot  | 51,083 | 0  | 131,175 | 140,778 |
